@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    display: block;
+}
+
+body {
+    background-color: #fff;
+    margin: 8px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d3d3d9;
+    padding: 10px 5px;
+}
+
+header img {
+    padding-left: 10px;
+    width: 82px;
+    height: 98px;
+}
+
+.inner-container {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 100vh;
+}
+
+.hero-content {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+}
