@@ -88,7 +88,7 @@ nav .button-one:hover, nav .button-two:hover, nav .button-three:hover {
     transform: scale(1.0);
     cursor: pointer;
     animation: shake 0.5s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 2;
 }
 
 .inner-container {
@@ -96,15 +96,12 @@ nav .button-one:hover, nav .button-two:hover, nav .button-three:hover {
 }
 
 @keyframes shake {
-    0% { transform: translate(1px, 1px) rotate(0deg); }
-    10% { transform: translate(-1px, -2px) rotate(-5deg); }
-    20% { transform: translate(-3px, 0px) rotate(5deg); }
-    30% { transform: translate(3px, 2px) rotate(0deg); }
-    40% { transform: translate(1px, -1px) rotate(5deg); }
-    50% { transform: translate(-1px, 2px) rotate(-1deg); }
-    60% { transform: translate(-3px, 1px) rotate(0deg); }
-    70% { transform: translate(3px, 1px) rotate(-1deg); }
-    80% { transform: translate(-1px, -1px) rotate(1deg); }
-    90% { transform: translate(1px, 2px) rotate(0deg); }
-    100% { transform: translate(1px, -2px) rotate(-1deg); }
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(20deg); }
+    75% { transform: rotate(-20deg); }
+    100% { transform:rotate(0deg); }
+}
+
+@media only screen and (min-width: 768px) {
+
 }
