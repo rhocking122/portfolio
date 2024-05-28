@@ -101,47 +101,6 @@ nav .button-one:hover, nav .button-two:hover, nav .button-three:hover {
     100% { transform:rotate(0deg); }
 }
 
-@media only screen and (max-width: 767px) {
-     nav ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-     }
-     nav li {
-        margin-right: 10px;
-        margin-bottom: 0;
-    }
-    nav a {
-        font-size: 0.8rem; /* Adjust font size to fit within the display */
-        padding: 2px 5px; /* Adjust padding to maintain button effect and fit */
-    }
-    header {
-        padding: 10px 5px;
-        flex-direction: column;
-        align-items: center;
-    }
-    header img {
-        width: 60px;
-        height: 72px;
-    }
-    nav .button-one, nav .button-two, nav .button-three {
-        margin: 5px;
-    }
-}
-
-@media (min-width: 1023px) {
-    header img {
-        margin-left: 50px;
-    }
-    nav {
-        margin-right: 50px;
-    }
-    nav a {
-        margin-right: 10px;
-        font-size: 2rem;
-    }
-}
-
 .inner-container {
     font-family: 'Roboto';
     display: flex;
@@ -175,4 +134,61 @@ nav .button-one:hover, nav .button-two:hover, nav .button-three:hover {
 .icon {
     width: 60px;
     height: 72px;
+}
+
+@media only screen and (max-width: 767px) {
+    nav ul {
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+    }
+    nav li {
+       margin-right: 10px;
+       margin-bottom: 0;
+   }
+   nav a {
+       font-size: 0.8rem; /* Adjust font size to fit within the display */
+       padding: 2px 5px; /* Adjust padding to maintain button effect and fit */
+   }
+   header {
+       padding: 10px 5px;
+       flex-direction: column;
+       align-items: center;
+   }
+   header img {
+       width: 60px;
+       height: 72px;
+   }
+   nav .button-one, nav .button-two, nav .button-three {
+       margin: 5px;
+   }
+
+   .hero-content h1 {
+       font-size: 50px;
+   }
+   
+   .hero-content h2 {
+       font-size: 30px;
+   }
+   
+   .hero-content p {
+       font-size: 30px;
+   }
+   .icon {
+    width: 40px;
+    height: 42px;
+   }
+}
+
+@media (min-width: 1023px) {
+    header img {
+        margin-left: 50px;
+    }
+    nav {
+        margin-right: 50px;
+    }
+    nav a {
+        margin-right: 10px;
+        font-size: 2rem;
+    }
 }
