@@ -54,19 +54,22 @@ nav .button-one, nav .button-two, nav .button-three {
     border-radius: 10%;
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     display: inline-block;
-    box-shadow: 0 5px 0 rgba(0, 0, 0, 0.2); /* Shadow to simulate unpressed button */
+    /* box-shadow: 0 5px 0 rgba(0, 0, 0, 0.2); Shadow to simulate unpressed button */
 }
 
 nav .button-one {
     background-color: #3BB273;
+    box-shadow: -4px 5px 0 #339963;
 }
 
 nav .button-two {
     background-color: #4D9DE0;
+    box-shadow: -4px 5px 0 #2f8dda;
 }
 
 nav .button-three {
     background-color: #E15554;
+    box-shadow: -4px 5px 0 #DA2F2F;
 }
 
 nav a {
@@ -102,6 +105,42 @@ nav .button-one:hover, nav .button-two:hover, nav .button-three:hover {
     100% { transform:rotate(0deg); }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 767px) {
+     nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+     }
+     nav li {
+        margin-right: 10px;
+        margin-bottom: 0;
+    }
+    nav a {
+        font-size: 0.8rem; /* Adjust font size to fit within the display */
+        padding: 2px 5px; /* Adjust padding to maintain button effect and fit */
+    }
+    header {
+        padding: 10px 5px;
+        flex-direction: column;
+        align-items: center;
+    }
+    header img {
+        width: 60px;
+        height: 72px;
+    }
+    nav .button-one, nav .button-two, nav .button-three {
+        margin: 5px;
+    }
+}
 
+@media (min-width: 1023px) {
+    header img {
+        margin-left: 50px;
+    }
+    nav {
+        margin-right: 50px;
+    }
+    nav a {
+        margin-right: 10px;
+    }
 }
