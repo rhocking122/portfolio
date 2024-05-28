@@ -94,10 +94,6 @@ nav .button-one:hover, nav .button-two:hover, nav .button-three:hover {
     animation-iteration-count: 2;
 }
 
-.inner-container {
-    font-family: 'Roboto', sans-serif;
-}
-
 @keyframes shake {
     0% { transform: rotate(0deg); }
     25% { transform: rotate(20deg); }
@@ -142,5 +138,41 @@ nav .button-one:hover, nav .button-two:hover, nav .button-three:hover {
     }
     nav a {
         margin-right: 10px;
+        font-size: 2rem;
     }
+}
+
+.inner-container {
+    font-family: 'Roboto';
+    display: flex;
+}
+
+.hero-content {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+}
+
+.hero-content h1 {
+    font-size: 100px;
+    margin-bottom: 15px;
+    color: #2f8dda;
+}
+
+.hero-content h2 {
+    font-size: 30px;
+    background-color: #bae1ff;
+    padding: 10px;
+}
+
+.hero-content p {
+    font-size: 30px;
+    background: linear-gradient(to bottom, #bae1ff, #baffc9);
+}
+
+.icon {
+    width: 60px;
+    height: 72px;
 }
