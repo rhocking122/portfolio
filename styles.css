@@ -32,6 +32,8 @@ nav {
     justify-content: space-between;
     padding: 10px;
     unicode-bidi: isolate;
+    font-family: "Pixelify Sans";
+
 }
 
 nav ul {
