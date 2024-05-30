@@ -33,7 +33,6 @@ nav {
     padding: 10px;
     unicode-bidi: isolate;
     font-family: "Pixelify Sans";
-
 }
 
 nav ul {
@@ -52,7 +51,7 @@ nav li {
 
 nav .button-one, nav .button-two, nav .button-three {
     color: #fff;
-    padding: 10px 20px; /* Adjusted padding for a more button-like appearance */
+    padding: 4px 4px; /* Adjusted padding for a more button-like appearance */
     border-radius: 10%;
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     display: inline-block;
@@ -125,12 +124,13 @@ nav .button-one:hover, nav .button-two:hover, nav .button-three:hover {
 .hero-content h2 {
     font-size: 30px;
     background-color: #bae1ff;
-    padding: 10px;
+    padding-left: 5px;
 }
 
 .hero-content p {
     font-size: 30px;
     background: linear-gradient(to bottom, #bae1ff, #baffc9);
+    padding-left: 10px;
 }
 
 .icon {
@@ -149,8 +149,8 @@ nav .button-one:hover, nav .button-two:hover, nav .button-three:hover {
        margin-bottom: 0;
    }
    nav a {
-       font-size: 0.8rem; /* Adjust font size to fit within the display */
-       padding: 2px 5px; /* Adjust padding to maintain button effect and fit */
+       font-size: 1.4rem; /* Adjust font size to fit within the display */
+        /* Adjust padding to maintain button effect and fit */
    }
    header {
        padding: 10px 5px;
@@ -163,6 +163,7 @@ nav .button-one:hover, nav .button-two:hover, nav .button-three:hover {
    }
    nav .button-one, nav .button-two, nav .button-three {
        margin: 5px;
+       padding: 2px 2px ;
    }
 
    .hero-content h1 {
@@ -182,6 +183,12 @@ nav .button-one:hover, nav .button-two:hover, nav .button-three:hover {
    }
 }
 
+@media (min-width: 768px) and (max-width: 1022px){
+    header img {
+        margin-left: 50px;
+    }
+}
+
 @media (min-width: 1023px) {
     header img {
         margin-left: 50px;
@@ -192,5 +199,9 @@ nav .button-one:hover, nav .button-two:hover, nav .button-three:hover {
     nav a {
         margin-right: 10px;
         font-size: 2rem;
+    }
+    nav .button-one, nav .button-two, nav .button-three {
+        margin: 5px;
+        padding: 2px 2px ;
     }
 }
