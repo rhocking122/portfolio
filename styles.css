@@ -205,3 +205,42 @@ nav .button-one:hover, nav .button-two:hover, nav .button-three:hover {
         padding: 2px 2px ;
     }
 }
+
+.section-heading {
+    padding-top: 4%;
+    text-align: center;
+}
+
+.section-title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+    background: linear-gradient(to top, rgb(135, 114, 209) 30%, transparent 30);
+}
+
+.about-me-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90vw;
+    margin: 5% ;
+}
+
+.about-box {
+    width: 100%;
+    margin: 1em;
+}
+
+#about-photo {
+    width: 315px;
+    height: 315px;
+    display: block;
+}
+
+#about-0 p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: blcok;
+}
