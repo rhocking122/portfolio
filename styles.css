@@ -222,9 +222,10 @@ nav .button-one:hover, nav .button-two:hover, nav .button-three:hover {
 .about-me-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    /* justify-content: center; */
     width: 90vw;
     margin: 5% ;
+    align-items: flex-start;
 }
 
 .about-box {
@@ -234,13 +235,16 @@ nav .button-one:hover, nav .button-two:hover, nav .button-three:hover {
 
 #about-photo {
     width: 315px;
-    height: 315px;
-    display: block;
+    height: 360px;
 }
+
+#about-0 {
+    flex: 1;
+} 
 
 #about-0 p {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 16px;
     letter-spacing: 1px;
-    display: blcok;
 }
+
