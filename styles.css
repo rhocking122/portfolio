@@ -102,6 +102,8 @@ nav .button-one:hover, nav .button-two:hover, nav .button-three:hover {
     100% { transform:rotate(0deg); }
 }
 
+/* homepage content section */
+
 .inner-container {
     font-family: 'Roboto';
     display: flex;
@@ -137,6 +139,8 @@ nav .button-one:hover, nav .button-two:hover, nav .button-three:hover {
     width: 60px;
     height: 72px;
 }
+
+/* media queriess for homepage */
 
 @media only screen and (max-width: 767px) {
     nav ul {
@@ -206,23 +210,26 @@ nav .button-one:hover, nav .button-two:hover, nav .button-three:hover {
     }
 }
 
+/* about-me hero section */
+
 .section-heading {
     padding-top: 4%;
     text-align: center;
 }
 
-.section-title {
-    display: flex;
-    justify-content: center;
-    text-align: center;
+#section-title {
+    display: inline-block;
     font-size: 40px;
-    background: linear-gradient(to top, rgb(135, 114, 209) 30%, transparent 30);
+    background: linear-gradient(to top, rgb(135, 114, 209) 30%, transparent 50%);
+    font-weight: bold;
+    font-family: monospace;
+    border-radius: 5%;
+    letter-spacing: 1px;
 }
 
 .about-me-container {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: center; */
     width: 90vw;
     margin: 5% ;
     align-items: flex-start;
@@ -234,8 +241,10 @@ nav .button-one:hover, nav .button-two:hover, nav .button-three:hover {
 }
 
 #about-photo {
-    width: 315px;
+    width: 360px;
     height: 360px;
+    border-radius: 5px;
+    border: 2px solid black;
 }
 
 #about-0 {
@@ -247,4 +256,125 @@ nav .button-one:hover, nav .button-two:hover, nav .button-three:hover {
     font-size: 16px;
     letter-spacing: 1px;
 }
+
+/* about-me skills section */
+
+#about-5 {
+    padding: 15px 40px 15px 15px;
+    border: 2px solid black;
+}
+
+#about-5 h3{
+    font-size: 30px;
+    font-family: 'roboto mono', monospace;
+    color: #000;
+    text-decoration: underline;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    color: #000;
+    font-family: monospace;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.pulling-left {
+    float: left;
+    padding-right: 4px;
+    margin: auto 0px;
+}
+
+.progress{
+    background-color: #000;
+    width: 100%;
+    height: 15px;
+    float: right;
+    overflow: hidden;
+    margin: 5px auto;
+    border: 5px double #f4f4f8;
+    border-radius: 2%;
+}
+
+.html {
+    width: 90%;
+    animation: html 2s ease-out forwards;
+}
+.css {
+    width: 80%;
+    animation: css 2s ease-out forwards;
+}
+.js {
+    width: 50%;
+    animation: js 2s ease-out forwards;
+}
+.py {
+    width: 35%;
+    animation: py 2s ease-out forwards;
+}
+.react {
+    width: 60%;
+    animation: react 2s ease-out forwards;
+}
+
+.progress-bar {
+    float: left;
+    background-color: #5abe62;
+    height: 100%;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+    transition: width 0.6s ease;
+}
+
+@keyframes html {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes css {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+
+@keyframes js {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+
+@keyframes py {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 35%;
+    }
+}
+
+@keyframes react {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 30%;
+    }
+}
+
+/* about-me education section */
 
