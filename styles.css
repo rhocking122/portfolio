@@ -262,6 +262,7 @@ nav .button-one:hover, nav .button-two:hover, nav .button-three:hover {
 #about-5 {
     padding: 15px 40px 15px 15px;
     border: 2px solid black;
+    padding-top: 20px;
 }
 
 #about-5 h3{
@@ -377,4 +378,30 @@ nav .button-one:hover, nav .button-two:hover, nav .button-three:hover {
 }
 
 /* about-me education section */
+
+.unt h3{
+    font-size: 30px;
+    font-family: 'roboto mono', monospace;
+    color: #000;
+    text-decoration: underline;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.unt {
+    padding-bottom: 10px;
+}
+
+/* about-me Achievements section */
+
+#about-2 h3{
+    font-size: 30px;
+    font-family: 'roboto mono', monospace;
+    color: #000;
+    text-decoration: underline;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
 
