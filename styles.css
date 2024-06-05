@@ -448,3 +448,22 @@ nav .button-one:hover, nav .button-two:hover, nav .button-three:hover {
     padding-bottom: 5px;
     text-decoration: underline;
 }
+
+/* Projects webpage section */
+
+.main-content {
+    width: 100vw;
+    height: 100vh;
+}
+
+.project-grid {
+    display: grid;
+    justify-content: space-around;
+    padding-top: 90px;
+}
+
+.website {
+    height: 250px;
+    width: 250px;
+}
+
