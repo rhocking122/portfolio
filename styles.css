@@ -496,3 +496,48 @@ nav .button-one:hover, nav .button-two:hover, nav .button-three:hover {
     border: 2px solid black;
 }
 
+/* contact me section */
+.contact-me-container {
+    display: flex;
+    flex-direction: column; /* Arrange children vertically */
+    justify-content: center;
+    align-items: flex-start; /* Align items to the left */
+    border: 2px solid black;
+    margin: 50px auto; /* Center container horizontally */
+    padding: 30px;
+    max-width: 600px; /* Optional: Set a max width for the container */
+    background-color: #f9f9f9; /* Optional: Add a background color */
+    font-family: 'roboto mono';
+}
+
+
+.contact-me-container h2,
+.contact-me-container input,
+.contact-me-container textarea,
+.contact-me-container button {
+    width: 100%; /* Make elements take full width */
+    margin-bottom: 15px; /* Add space between elements */
+}
+
+.contact-me-container input,
+.contact-me-container textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-me-container button {
+    padding: 10px;
+    border: none;
+    background-color: #4D9DE0;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-me-container button:hover {
+    background-color: #3b7bb3;
+}
